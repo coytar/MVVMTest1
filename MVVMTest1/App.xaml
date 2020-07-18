@@ -1,0 +1,17 @@
+﻿<Application x:Class="MVVMTest1.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MVVMTest1"
+             xmlns:views="clr-namespace:MVVMTest1.Views"
+             xmlns:viewmmodels="clr-namespace:MVVMTest1.ViewModels">
+            <!--StartupUri="MainWindow.xaml">-->
+    
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type viewmmodels:HomeViewModel}">
+            <views:HomeView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmmodels:AlarmViewModel}">
+            <views:AlarmView />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
